@@ -5,8 +5,6 @@ public class Student {
     private String name;
     private int grade;  // 1 to 4
     private int feesPaid;
-
-
     private int feesTotal;
 
     // constructor
@@ -20,8 +18,12 @@ public class Student {
 
     }
 
+    public void setGrade(int grade) {
+        this.grade = grade;
+    }
+
     public void payFees(int fees) {
-        feesPaid +=     fees;
+        feesPaid += fees;
         School.updateTotalMoneyEarned(feesPaid);
     }
     public int getId() {
@@ -45,11 +47,14 @@ public class Student {
 
     }
 
-
-
     public int getRemainingFees(){
         return feesTotal - feesPaid;
 
+    }
+    @Override
+    public String toString() {
+        return "Student's name :"+name+
+                " Total fees paid so far "+ feesPaid + "TL.";
     }
 
 

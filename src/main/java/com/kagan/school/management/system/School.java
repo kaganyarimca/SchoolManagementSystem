@@ -5,7 +5,7 @@ import java.util.List;
 public class School  {
 
     private List<Teacher>  teachers;
-    private  List<Student> students;
+    private List<Student> students;
     private static int  totalMoneyEarned;
     private static int totalMoneySpend;
 
@@ -18,7 +18,7 @@ public class School  {
 
     }
 
-    public List<Teacher> getTeacher() {
+    public List<Teacher> getTeachers() {
         return teachers;
     }
 
@@ -26,7 +26,7 @@ public class School  {
         teachers.add(teacher);
     }
 
-    public List<Student> getStudent() {
+    public List<Student> getStudents() {
         return students;
     }
 
